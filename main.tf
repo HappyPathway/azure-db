@@ -4,7 +4,7 @@ module "mysql_server" {
   source  = "app.terraform.io/Darnold-Hashicorp/mysql-server/azure"
   version = "1.2.0"
 
-  db_name        = "vault-demo"
+  db_name        = "vaultdemo"
   ip_name        = "simple-app-ip001"
   location       = "${data.terraform_remote_state.network.location}"
   resource_group = "${data.terraform_remote_state.network.rg_name}"
