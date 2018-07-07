@@ -3,7 +3,7 @@ output "fqdn" {
 }
 
 output "server_name" {
-  value = "${vmodule.mysql_server.server_name}"
+  value = "${module.mysql_server.server_name}"
 }
 
 output "db_name" {
