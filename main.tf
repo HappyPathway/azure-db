@@ -2,7 +2,7 @@
 // Modules
 module "mysql_server" {
   source  = "app.terraform.io/Darnold-Hashicorp/mysql-server/azure"
-  version = "2.0.6"
+  version = "2.0.7"
 
   db_name        = "vaultdemo"
   ip_name        = "simple-app-ip001"
