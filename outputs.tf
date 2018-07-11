@@ -10,10 +10,6 @@ output "db_name" {
   value = "${module.mysql_server.db_name}"
 }
 
-output "vault_token" {
-  value = "${module.mysql_server.vault_token}"
-}
-
-output "vault_cluster" {
-  value = "${module.mysql_server.vault_cluster}"
+output "vault_mount" {
+  value = "${module.mysql_server.vault_mount}"
 }
