@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------
 // Modules
 module "mysql_server" {
-  source  = "app.terraform.io/Darnold-Hashicorp/mysql-server/azure"
+  source  = "app.terraform.io/Darnold-AzureTF/mysql-server/azure"
   version = "2.1.0"
 
   db_name        = "vaultdemo"
