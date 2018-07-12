@@ -11,3 +11,5 @@ variable "vault_token" {
 variable "organization" {}
 
 variable "network_ws" {}
+
+variable "service_name" {}
