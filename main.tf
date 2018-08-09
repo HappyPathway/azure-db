@@ -2,7 +2,7 @@
 // Modules
 module "mysql_server" {
   source  = "app.terraform.io/Darnold-AzureTF/mysql-server/azure"
-  version = "2.7.2"
+  version = "2.7.4"
 
   db_name        = "${var.db_name}"
   location       = "${data.terraform_remote_state.network.location}"
