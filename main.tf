@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------
 // Modules
 module "mysql_server" {
-  source  = "app.terraform.io/Darnold-AzureTF/mysql-server/azure"
+  source  = "github.com/HappyPathway/terraform-azure-mysql-server"
   version = "2.7.4"
 
   db_name        = "${var.db_name}"
