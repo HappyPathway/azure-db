@@ -10,4 +10,5 @@ module "mysql_server" {
   service_name   = "${var.service_name}"
   vault_addr = "${var.vault_addr}"
   vault_token = "${var.vault_token}"
+  vault_cluster = "${var.vault_cluster}"
 }
