@@ -9,4 +9,6 @@ module "mysql_server" {
   resource_group = "${data.terraform_remote_state.network.rg_name}"
   server_name    = "${var.server_name}"
   service_name   = "${var.service_name}"
+  vault_addr = "${var.vault_addr}"
+  vault_token = "${var.vault_token}"
 }
