@@ -2,13 +2,11 @@
 // Modules
 module "mysql_server" {
   source  = "github.com/HappyPathway/terraform-azure-mysql-server"
-  version = "2.7.4"
+  version = "3.0.0"
 
   db_name        = "${var.db_name}"
   location       = "${data.terraform_remote_state.network.location}"
   resource_group = "${data.terraform_remote_state.network.rg_name}"
   server_name    = "${var.server_name}"
   service_name   = "${var.service_name}"
-  vault_cluster  = "${var.vault_cluster}"
-  vault_token    = "${var.vault_token}"
 }
